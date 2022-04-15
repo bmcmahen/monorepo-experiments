@@ -1,9 +1,10 @@
 // src/Button.tsx
-import * as React from "react";
-var Button = () => {
-  console.log("hello");
-  return /* @__PURE__ */ React.createElement("button", null, "Boop");
-};
+import React from "react";
+function Button() {
+  return /* @__PURE__ */ React.createElement("button", {
+    type: "button"
+  }, "Boop");
+}
 export {
   Button
 };
