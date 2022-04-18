@@ -28,10 +28,22 @@ module.exports = __toCommonJS(src_exports);
 
 // src/Button.tsx
 var import_react = __toESM(require("react"));
+
+// src/theme/index.tsx
+var theme = {
+  color: "#08e"
+};
+
+// src/Button.tsx
+var import_utils = require("utils");
 function Button() {
   return /* @__PURE__ */ import_react.default.createElement("button", {
+    style: {
+      color: theme.color,
+      padding: "1rem"
+    },
     type: "button"
-  }, "Boop");
+  }, "Boop ", (0, import_utils.helloWorld)());
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

@@ -13,11 +13,12 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "storybook": "turbo run storybook",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "rm -rf node_modules && turbo run clean"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
+    "@testing-library/react": "^12.0.4",
     "@testing-library/react-hooks": "^8.0.0",
     "@testing-library/user-event": "^14.1.0",
     "@types/jest": "^27.4.1",
@@ -28,6 +29,7 @@
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-test-renderer": "^18.0.0",
     "turbo": "latest"
   },
   "engines": {

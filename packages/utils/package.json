@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "utils",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,18 +10,15 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "test": "jest",
-    "lint": "TIMING=1 eslint src",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "yarn dev",
+    "build-storybook": "yarn buld"
   },
   "dependencies": {
     "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
-    "utils": "*"
+    "@types/react-dom": "^17.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -32,19 +29,14 @@
     "@storybook/builder-vite": "^0.1.28",
     "@storybook/react": "^6.5.0-alpha.63",
     "@storybook/testing-library": "^0.0.9",
-    "@testing-library/react": "^12.0.4",
+    "@testing-library/react": "^13.0.1",
     "@testing-library/react-hooks": "^8.0.0",
     "@testing-library/user-event": "^14.1.0",
     "babel-loader": "^8.2.4",
     "config": "*",
     "eslint": "^8.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "ts-jest": "^27.1.4",
     "tsconfig": "*",
     "tsup": "^5.10.1",
-    "typescript": "^4.5.3",
-    "vite": "^2.9.5",
-    "vite-tsconfig-paths": "^3.4.1"
+    "typescript": "^4.5.3"
   }
 }

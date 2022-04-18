@@ -5,6 +5,6 @@ import { Button } from "./Button";
 describe("Button", () => {
   it("should", () => {
     render(<Button />);
-    expect(screen.getByText("Boop")).toBeInTheDocument();
+    expect(screen.getByText("Boop Hello World")).toBeInTheDocument();
   });
 });
