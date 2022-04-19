@@ -1,6 +1,6 @@
 import React from "react";
 import { theme } from "theme";
-import { helloWorld } from "utils";
+import { helloWorld, another } from "utils";
 
 export function Button() {
   return (
@@ -11,7 +11,7 @@ export function Button() {
       }}
       type="button"
     >
-      Boop {helloWorld()}
+      Boop {helloWorld()} {another()}
     </button>
   );
 }
